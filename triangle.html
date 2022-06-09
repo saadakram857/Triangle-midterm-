@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>your triangel</title>
+</head>
+
+<body>
+
+
+    <script>
+        var a = '';
+        var length = parseInt(prompt("Enter the length of triangle"));
+        var m = (length - 1);
+        for (i = 1; i <= length; i++) {
+            a = a.trim();
+            a = ' '.repeat(m) + a + (i > 1 ? ' ' : '') + '*';
+
+            m--;
+            document.write(a);
+            document.write("<br>");
+        }
+    </script>
+
+</body>
+
+</html>
